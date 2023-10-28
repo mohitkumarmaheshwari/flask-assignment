@@ -1,0 +1,23 @@
+#5. Implement user sessions in a Flask app to store and display user-specific data.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Session Example</title>
+</head>
+<body>
+    <h1>Flask Session Example</h1>
+    
+    {% if 'username' in session %}
+    <p>Welcome, {{ session['username'] }}!</p>
+    <p><a href="/logout">Logout</a></p>
+    {% else %}
+    <form method="post">
+        <label for="username">Enter your username:</label>
+        <input type="text" id="username" name="username" required>
+        <button type="submit">Login</button>
+    </form>
+    {% endif %}
+</body>
+</html>
