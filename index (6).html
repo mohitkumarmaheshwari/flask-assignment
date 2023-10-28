@@ -1,0 +1,25 @@
+#6. Build a Flask app that allows users to upload files and display them on the website.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload Example</title>
+</head>
+<body>
+    <h1>File Upload Example</h1>
+    
+    <form method="post" enctype="multipart/form-data">
+        <label for="file">Choose a file:</label>
+        <input type="file" id="file" name="file" accept=".txt, .pdf, .png, .jpg, .jpeg, .gif" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <h2>Uploaded Files:</h2>
+    <ul>
+        {% for file in files %}
+        <li><a href="{{ url_for('static', filename='uploads/' + file) }}">{{ file }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
