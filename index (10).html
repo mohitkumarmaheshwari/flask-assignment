@@ -1,0 +1,26 @@
+##12. Build a Flask app that updates data in real-time using WebSocket connections
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Data Updates</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+    <script type="text/javascript">
+        var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+        socket.on('connect', function() {
+            console.log('Connected to the server.');
+        });
+
+        socket.on('update_data', function(data) {
+            // Handle the updated data here
+            console.log('Received updated data:', data);
+            // Update your UI or perform other actions with the received data
+        });
+    </script>
+</head>
+<body>
+    <h1>Real-Time Data Updates</h1>
+    <!-- Display updated data here, if necessary -->
+</body>
+</html>
