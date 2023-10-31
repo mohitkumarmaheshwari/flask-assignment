@@ -1,0 +1,35 @@
+#7. Integrate a SQLite database with Flask to perform CRUD operations on a list of items.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Items List</title>
+</head>
+<body>
+    <h1>Items List</h1>
+    <ul>
+        {% for item in items %}
+            <li>
+                {{ item.name }}
+                <form method="post" action="{{ url_for('delete', item_id=item.id) }}" style="display: inline;">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+    <h2>Add New Item</h2>
+    <form method="post" action="{{ url_for('add') }}">
+        <label for="item">Item:</label>
+        <input type="text" id="item" name="item" required>
+        <button type="submit">Add</button>
+    </form>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>
