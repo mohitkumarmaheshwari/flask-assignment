@@ -1,0 +1,14 @@
+output for all question
+question no.1-https://green-hairdresser-rwjek.pwskills.app:8080/
+question no.2-https://green-postman-uxeji.pwskills.app:8082/
+question no.3-https://salmon-judge-cgvfy.pwskills.app:8083/greet/mohit
+question no.4-https://lemon-accountant-aiura.pwskills.app:8081/
+question no.5-https://orange-analyst-oervj.pwskills.app:8085/
+question no.6-https://black-hairdresser-rwxdq.pwskills.app:8080/
+question no.7-https://red-secretary-nrcmj.pwskills.app:5005/
+question no.8-https://yellow-translator-yuwhi.pwskills.app:8004/login
+question no.9-https://brown-nurse-hexev.pwskills.app:5005/books
+question no.10-https://orange-actor-dbacd.pwskills.app:5005/
+question no.11-https://yellow-receptionist-wcalp.pwskills.app:5004/
+question no.12-https://black-optician-hgawx.pwskills.app:5005/
+question no.13-https://white-chef-zbcue.pwskills.app:5005/
